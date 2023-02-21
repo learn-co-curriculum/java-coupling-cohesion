@@ -9,7 +9,7 @@
 ## Introduction
 
 When we create an application in Java, we want to make sure that it is easy
-to maintain. Far too often do programmers spend more hours needed updating code.
+to maintain. Far too often do programmers spend more hours updating code than needed.
 In the late 1960s, Larry Constantine developed two concepts to help design
 better software - coupling and cohesion. These concepts are now standard
 terms in the software engineering community.
@@ -46,6 +46,8 @@ public class Library {
 The above example shows a `Book` and a `Library` class where both classes have
 class members that refer to the other. We can say that these two classes are
 **tightly coupled**. Tight coupling can lead to issues when maintaining code.
+Although sometimes it is convenient when implementing bidirectional
+relationships, which is often the case with object persistence frameworks. 
 
 With our `Book` and `Library` class, the `Book` class has a reference to a
 `Library` object, but is that really necessary? And can't a `Book` exist on its
